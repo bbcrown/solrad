@@ -1,11 +1,9 @@
 Package: calcSolar
-Type: Package
-Title: Calculation of All Solar Radiation on a Surface
+Title: Calculation of Solar Radiation Components on a Surface
 Version: 1.0.0
-Author: Bijan Seyednasrollah
-Maintainer: Bijan Seyednasrollah <bijan.s.nasr@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: person("Bijan", "Seyednasrollah", email = "bijan.s.nasr@gmail.com", role = c("aut", "cre"))
+Description: This packages calculates direct and diffuse components of solar radiation for a point on the earth surface. The surface is defined by geographical coordinates (latitude and longitude) with a slope and aspect with respect to the south. As solar position and angles may be obtained from an accurate solar time, the standard latitude and daylight saving parameters are also needed.     The package also returns solar angles: altitude, zenith and incidence angles. Atmospheric transmittance and diffuse coefficients are also calculated.
+Depends: R (>= 2.1.1)
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
