@@ -1,5 +1,5 @@
 DayOfYear <- function(Date){
-  DOY <- as.numeric(strftime(today, format = "%j"))
+  DOY <- as.numeric(strftime(Date, format = "%j"))
   DOY
 }
 
@@ -7,11 +7,13 @@ DayOfYear <- function(Date){
 #' Equation of time
 #'
 #' This function approximate the value of equation of time for a given date.
-#' @param DOY Do you love cats? Defaults to TRUE.
-#' @keywords calcSolar
+#' @param DOY Day of year
+#' @keywords Equation of time value
 #' @export
 #' @examples
-#' eot()
+#' DOY <- 1:365
+#' e <- eot(DOY)
+#' plot(DOY, e)
 
 eot <- function(DOY){
   B  <-  (DOY - 81)*360/365
