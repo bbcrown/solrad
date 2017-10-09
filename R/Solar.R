@@ -28,7 +28,7 @@
 #' lines(DOY, solar$Sdifopen, col='red')
 #'
 
-Solar <- function(DOY, Lat, Lon=0, SLon=0, DS=0, Elevation=0, Slope=0, Aspect=0){
+Solar <- function(DOY, Lat, Lon, SLon, DS, Elevation, Slope, Aspect){
 
   #calculate solar radiation and related variables based on location, time and topographical conditions
   DOY <- (DOY+365)%%365
@@ -52,12 +52,18 @@ Solar <- function(DOY, Lat, Lon=0, SLon=0, DS=0, Elevation=0, Slope=0, Aspect=0)
   Sopen <- OpenRadiation(DOY, Lat, Lon, SLon, DS, Elevation)
 
   Sdiropen <- DirectRadiation(DOY, Lat, Lon, SLon, DS, Elevation, Slope, Aspect)
-  Sdifopen <- DiffuseRadiation(DOY, Lat, Lon, SLon, DS, Elevation)
+  Sdifopen <- DiffuseRadiation(DOY, Lat, Lon, SLon, DS, Elevation, Slope)
 
-  list(Daylength=DayLength,
+  list(Declination = Delta,
+       Daylength=DL,
+       Sunset = Hss,
+       Sunrise = Hsr,
+       Declination = Delta,
        Altitude=Alpha,
        Azimuth=Az,
        Incidence=Theta,
+       Sextr = Sextr,
+       Sopen = Sopen,
        Sdiropen=Sdiropen,
        Sdifopen=Sdifopen)
 }

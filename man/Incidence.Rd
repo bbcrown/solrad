@@ -4,7 +4,7 @@
 \alias{Incidence}
 \title{Solar Incidence Angle}
 \usage{
-Incidence(DOY, Lat, Lon, SLon, DS = 0, Slope = 0, Aspect = 0)
+Incidence(DOY, Lat, Lon, SLon, DS, Slope, Aspect)
 }
 \arguments{
 \item{DOY}{Day of year}

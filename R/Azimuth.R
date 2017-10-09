@@ -20,7 +20,8 @@
 #' plot(DOY, Az)
 #'
 
-Azimuth <- function(DOY, Lat, Lon = 0, SLon = 0, DS = 0){
+Azimuth <- function(DOY, Lat, Lon, SLon, DS){
+
   delta <-   Declination(DOY)
   H  <-  HourAngle(DOY, Lon, SLon, DS)
   ast  <-  AST(DOY, Lon, SLon, DS)
@@ -31,10 +32,8 @@ Azimuth <- function(DOY, Lat, Lon = 0, SLon = 0, DS = 0){
     cos(pi/180*alpha)
 
   Azimuth1  <-  180/pi*asin(rhs)
-  # plot(DOY,rhs)
-  # plot(DOY, Azimuth1)
 
-c1 <- (ast < 12*60)*1
+  c1 <- (ast < 12*60)*1
   c2 <- (cos(pi/180*H)> tan(pi/180*delta)/tan(pi/180*Lat))*1
 
   Azimuth2 <-
@@ -44,6 +43,7 @@ c1 <- (ast < 12*60)*1
   Az <-
     c2*Azimuth1 +
     (1-c2)*Azimuth2
+
   Az
 }
 

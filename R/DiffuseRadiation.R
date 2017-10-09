@@ -21,7 +21,7 @@
 #' plot(DOY, Sdifopen)
 #'
 
-DiffuseRadiation <- function(DOY, Lat, Lon, SLon, DS = 0, Elevation, Slope = 0){
+DiffuseRadiation <- function(DOY, Lat, Lon, SLon, DS, Elevation, Slope){
   Alpha  <-   Altitude(DOY, Lat, Lon, SLon, DS)
   Sopen <- OpenRadiation(DOY, Lat, Lon, SLon, DS, Elevation)
   td <- DiffusionFactor(DOY, Lat, Lon, SLon, DS, Elevation)

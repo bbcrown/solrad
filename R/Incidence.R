@@ -22,7 +22,7 @@
 #' plot(DOY, theta)
 #'
 
-Incidence  <-  function(DOY, Lat, Lon, SLon, DS=0, Slope= 0, Aspect = 0){
+Incidence  <-  function(DOY, Lat, Lon, SLon, DS, Slope, Aspect){
   Delta <-   Declination(DOY)
   H  <-  HourAngle(DOY, Lon, SLon, DS)
 

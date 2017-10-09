@@ -4,8 +4,7 @@
 \alias{Solar}
 \title{Calculating Solar Variables}
 \usage{
-Solar(DOY, Lat, Lon = 0, SLon = 0, DS = 0, Elevation = 0, Slope = 0,
-  Aspect = 0)
+Solar(DOY, Lat, Lon, SLon, DS, Elevation, Slope, Aspect)
 }
 \arguments{
 \item{DOY}{Day of year}
@@ -36,8 +35,9 @@ DOY <- seq(0, 2, .05)
 solar <- Incidence(Solar, Lat = 45, Lon=10, SLon=10, DS=0, Slope = 10, Aspect = 0)
 #Note: only the difference between Lon and SLon matters not each value
 
+par(mfrow=c(3,1))
 plot(DOY, solar$Altitude, ylim = c(-90,90))
-lines(DOY, solar$Azimuth, col= 'red')
+plot(DOY, solar$Azimuth, col= 'red')
 
 plot(DOY, solar$Sdiropen)
 lines(DOY, solar$Sdifopen, col='red')
