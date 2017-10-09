@@ -4,7 +4,7 @@
 \alias{DiffuseRadiation}
 \title{Solar Diffuse Radiation on a Surface}
 \usage{
-DiffuseRadiation(DOY, Lat, Lon, SLon, DS, Elevation)
+DiffuseRadiation(DOY, Lat, Lon, SLon, DS, Elevation, Slope)
 }
 \arguments{
 \item{DOY}{Day of year}
@@ -28,7 +28,7 @@ This function returns solar diffuse dadiation (in W/m2) for a given day of year,
 
 DOY <- seq(0, 2, .05)
 
-Sdifopen <- DiffuseRadiation(DOY, Lat = 45, Lon=10, SLon=10, DS=0, Elevation = 100)
+Sdifopen <- DiffuseRadiation(DOY, Lat = 45, Lon=10, SLon=10, DS=0, Elevation = 100, Slope = 0)
 #Note: only the difference between Lon and SLon matters not each value
 
 plot(DOY, Sdifopen)

@@ -4,7 +4,7 @@
 \alias{Azimuth}
 \title{Solar Azimuth Angle}
 \usage{
-Azimuth(DOY, Lat, Lon = 0, SLon = 0, DS = 0)
+Azimuth(DOY, Lat, Lon, SLon, DS)
 }
 \arguments{
 \item{DOY}{Day of year}
