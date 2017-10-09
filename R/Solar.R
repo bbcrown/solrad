@@ -55,7 +55,6 @@ Solar <- function(DOY, Lat, Lon, SLon, DS, Elevation, Slope, Aspect){
   Sdifopen <- DiffuseRadiation(DOY, Lat, Lon, SLon, DS, Elevation, Slope)
 
   list(Declination = Delta,
-       Daylength=DL,
        Sunset = Hss,
        Sunrise = Hsr,
        Declination = Delta,
