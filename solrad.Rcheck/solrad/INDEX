@@ -1,0 +1,22 @@
+AST                     Apparent Solar Time
+Altitude                Solar Altitude Angle
+Azimuth                 Solar Azimuth Angle
+DayLength               Day Length
+DayOfYear               Day of year
+Declination             Declination Angle
+DiffuseRadiation        Solar Diffuse Radiation on a Surface
+DiffusionFactor         Atmospheric Diffusion Factor
+DirectRadiation         Solar Direct Beam Radiation on Surface
+EOT                     Equation of time
+Extraterrestrial        Solar Extraterrestrial Radiation
+ExtraterrestrialNormal
+                        Normal Extraterrestrial Solar Radiation
+HourAngle               Solar Hour Angle
+Incidence               Solar Incidence Angle
+LST                     Local Standard Time
+OpenRadiation           Open Sky Solar Radiation
+Solar                   Calculating Solar Variables
+SolarConstant           Solar Constant
+Sunrise                 Sunrise Time
+Sunset                  Sunset Time
+Transmittance           Atmospheric Transmittance
