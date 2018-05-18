@@ -17,5 +17,5 @@ devtools::install(pkg = 'toCRAN')
 
 pkg.name <- devtools::build('toCRAN')
 devtools::check('toCRAN')
-system(command = paste0('R CMD check --as-cran ', basename(pkg.name)))
 system(command = paste0('R CMD check ', basename(pkg.name)))
+system(command = paste0('R CMD check --as-cran ', basename(pkg.name)))
