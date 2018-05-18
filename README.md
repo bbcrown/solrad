@@ -3,7 +3,7 @@
 # solrad
 ### Calculating solar radiation and related variables based on location, time and topographical conditions 
 
-The 'solrad' R package is to be used in surface energy models and estimation of solar positions and components with varying topography, time and locations. The functions calculate solar top-of-atmosphere, open, diffuse and direct components, atmospheric transmittance and diffuse factors, day length, sunrise and sunset, solar azimuth, zenith, altitude, incidence, and hour angles, earth declination angel, equation of time, and solar constant.
+The 'solrad' R package is to be used in surface energy models and estimation of solar positions and components with varying topography, time and locations. The functions calculate solar top-of-atmosphere, open, diffuse and direct components, atmospheric transmittance and diffuse factors, day length, sunrise and sunset, solar azimuth, zenith, altitude, incidence, and hour angles, earth declination angle, equation of time, and solar constant.
 
 The R package is developed and maintained by [Bijan Seyednarollah](https://bnasr.github.io/).
 
