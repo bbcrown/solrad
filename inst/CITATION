@@ -2,8 +2,24 @@ year <- sub('-.*', '', meta$Date)
 note <- sprintf('R package version %s', meta$Version)
 
 bibentry(bibtype = 'Manual',
-         title = 'calcSolar: Solar position and radiation components',
+         title = 'solrad: To calculate solar radiation and related variables based on location, time and topographical conditions',
          author = c(person('Bijan', 'Seyednasrollah')),
-         year = year,
+         year = 2018,
          note = note,
-         url = 'http://doi.org/10.5281/zenodo.1006384')
+         url = 'http://doi.org/10.5281/zenodo.1006383')
+
+citEntry(entry = "Article",
+         author = c("Bijan Seyednasrollah",
+                    "Mukesh Kumar",
+                    "Timothy E. Link"),
+         title = "On the role of vegetation density on net snow cover radiation at the forest floor",
+         journal = "Journal of Geophysical Research: Atmospheres",
+         volume = "118",
+         number = "",
+         pages = " 8359 – 8374",
+         year = "2013",
+         note = "",
+         issn = "0034-4257",
+         doi = "10.1002/jgrd.50575",
+         url = "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/jgrd.50575",
+         textVersion = "Seyednasrollah, Bijan, Mukesh Kumar, and Timothy E. Link. "On the role of vegetation density on net snow cover radiation at the forest floor." Journal of Geophysical Research: Atmospheres 118.15 (2013): 8359-8374.")
