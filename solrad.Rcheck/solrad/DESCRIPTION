@@ -1,7 +1,7 @@
 Package: solrad
-Title: Calculating solar radiation and related variables based on
-        location, time and topographical conditions
-Description: The 'solrad' R package is to be used in surface energy models and estimation of solar positions and components with varying topography, time and locations. The functions calculate solar top-of-atmosphere, open, diffuse and direct components, atmospheric transmittance and diffuse factors, day length, sunrise and sunset, solar azimuth, zenith, altitude, incidence, and hour angles, earth declination angle, equation of time, and solar constant.
+Title: Calculating Solar Radiation and Related Variables Based on
+        Location, Time and Topographical Conditions
+Description: For surface energy models and estimation of solar positions and components with varying topography, time and locations. The functions calculate solar top-of-atmosphere, open, diffuse and direct components, atmospheric transmittance and diffuse factors, day length, sunrise and sunset, solar azimuth, zenith, altitude, incidence, and hour angles, earth declination angle, equation of time, and solar constant. Details about the methods and equations are explained in Seyednasrollah, Bijan, Mukesh Kumar, and Timothy E. Link. 'On the role of vegetation density on net snow cover radiation at the forest floor.' Journal of Geophysical Research: Atmospheres 118.15 (2013): 8359-8374, <doi:10.1002/jgrd.50575>.
 Version: 0.99.0
 Date: 2018-05-18
 Author: Bijan Seyednasrollah
@@ -14,5 +14,5 @@ RoxygenNote: 6.0.1.9000
 URL: https://github.com/bnasr/solrad/
 BugReports: https://github.com/bnasr/solrad/issues
 NeedsCompilation: no
-Packaged: 2018-05-18 17:58:35 UTC; bijan
-Built: R 3.4.1; ; 2018-05-18 17:59:24 UTC; unix
+Packaged: 2018-05-18 22:34:38 UTC; bijan
+Built: R 3.4.1; ; 2018-05-18 22:35:14 UTC; unix

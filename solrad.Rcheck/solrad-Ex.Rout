@@ -169,7 +169,7 @@ Type 'q()' to quit R.
 > #Calculating day of year for now
 > 
 > DayOfYear(Sys.time())
-[1] 138.458
+[1] 138.6495
 > 
 > 
 > 
@@ -650,7 +650,7 @@ Type 'q()' to quit R.
 > ###
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.171 0.005 0.175 0 0 
+Time elapsed:  0.161 0.012 0.174 0 0 
 > grDevices::dev.off()
 null device 
           1 

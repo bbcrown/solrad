@@ -10,10 +10,6 @@
 Maintainer: ‘Bijan Seyednasrollah <bijan.s.nasr@gmail.com>’
 
 New submission
-
-The Title field should be in title case, current version then in title case:
-‘Calculating solar radiation and related variables based on location, time and topographical conditions’
-‘Calculating Solar Radiation and Related Variables Based on Location, Time and Topographical Conditions’
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
