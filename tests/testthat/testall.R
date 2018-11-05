@@ -1,5 +1,7 @@
 context("all")
 
+DOY <- DayOfYear('2018-11-04')
+
 solar <- Solar(DOY = seq(0, 2, .05),
                Lat = 45,
                Lon = 10,
@@ -8,6 +10,11 @@ solar <- Solar(DOY = seq(0, 2, .05),
                Elevation = 1000,
                Slope = 10,
                Aspect = 0)
+
+
+test_that("test DOY", {
+  expect_equal(DOY, 308)
+})
 
 
 test_that("test Declination", {
