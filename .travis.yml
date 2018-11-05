@@ -1,13 +1,10 @@
 language: r
-sudo: true
-warnings_are_errors: false
+r:
+  - oldrel
+  - release
+  - devel
+sudo: false
 
-before_install:
-  - sudo apt-get update
-
-r_binary_packages:
-
-# Code coverage
 r_packages:
   - covr
 
