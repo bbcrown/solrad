@@ -3,6 +3,7 @@ sudo: required
 warnings_are_errors: false
 
 before_install:
+  - sudo add-apt-repository ppa:marutter/rrutter -y
   - sudo apt-get update
 
 r_binary_packages:
