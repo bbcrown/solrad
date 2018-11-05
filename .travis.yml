@@ -2,16 +2,6 @@ language: r
 sudo: required
 warnings_are_errors: false
 
-# blacklist
-# branches:
-#  except:
-#    - master
-
-# whitelist
-# branches:
-#  only:
-#    - release
-
 before_install:
   - sudo apt-get update
 
@@ -20,13 +10,6 @@ r_binary_packages:
 # Code coverage
 r_packages:
   - covr
-
-## For a CRAN package
-#  - ./travis-tool.sh install_r <package>
-
-#install:
-#  ## For installing all CRAN dependencies using rpack's DESCRIPTION
-#  - ./travis-tool.sh install_deps
 
 after_success:
   - Rscript -e 'library(covr); codecov()'

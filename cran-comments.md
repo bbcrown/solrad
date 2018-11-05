@@ -1,14 +1,11 @@
 ## Test environments
-* Ubuntu xenial 16.04.3 LTS, R version 3.4.1 (2017-06-30)
-* macOS High Sierra 10.13.3 (17D47), R version 3.4.2 (2017-09-28)
+* macOS Mojave 10.14: x86_64-apple-darwin15.6.0, R version 3.4.4 (2018-03-15), tested on 2018-11-04
+* tested on Travis
 
 ## R CMD check results
 R CMD check results
-0 errors | 0 warnings | 1 notes
+0 errors | 0 warnings | 0 notes
 
-New submission
-
-R CMD check --as-cran
-Status: 0 NOTE
+R CMD check succeeded
 
 ## Dependencies
